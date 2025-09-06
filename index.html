@@ -48,7 +48,11 @@
             color: #8b5cf6;
         }
         .hero-section {
-            background: linear-gradient(135deg, rgba(232, 223, 245, 0.6), rgba(255, 255, 255, 0.6));
+            background-image: url('https://images.unsplash.com/photo-1517436580625-2c847c28a002?q=80&w=1740&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(232, 223, 245, 0.6);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 2rem;
@@ -63,9 +67,9 @@
     <!-- Fixed Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-white bg-opacity-30 backdrop-blur-md shadow-md py-4">
         <div class="container mx-auto px-4 flex justify-between gap-x-6 text-sm font-semibold text-gray-600">
-            <a href="#summary" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-address-card"></i>
-                <span>Summary</span>
+            <a href="#about" class="nav-link flex items-center space-x-1 transition duration-300">
+                <i class="fa-solid fa-user"></i>
+                <span>About me</span>
             </a>
             <a href="#experience" class="nav-link flex items-center space-x-1 transition duration-300">
                 <i class="fa-solid fa-briefcase"></i>
@@ -88,8 +92,8 @@
                 <span>Awards</span>
             </a>
             <a href="#contact" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Contact</span>
+                <i class="fa-solid fa-id-card"></i>
+                <span>References</span>
             </a>
         </div>
     </nav>
@@ -122,16 +126,23 @@
                     <span>LinkedIn</span>
                 </a>
             </div>
+            <!-- Resume Download Section -->
+            <div class="mt-8 text-center">
+                <a href="/path/to/your-resume.pdf" download class="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 transition duration-300 transform hover:scale-105">
+                    <i class="fa-solid fa-download mr-3"></i>
+                    <span>Download Resume (PDF)</span>
+                </a>
+            </div>
         </header>
 
-        <!-- Summary Section -->
-        <section id="summary" class="mb-12 glass-card">
+        <!-- About Me Section -->
+        <section id="about" class="mb-12 glass-card">
             <h3 class="text-3xl font-bold section-title">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <span>Summary</span>
+                <i class="fa-solid fa-user text-purple-500 text-3xl"></i>
+                <span>About me</span>
             </h3>
             <p class="text-lg leading-relaxed text-gray-700">
-                A highly productive and proactive individual with a strong reputation for problem-solving, research, and innovative teaching strategies. Known for engaging students and promoting academic excellence through clear communication, critical thinking, and adaptability. Skilled in creating inclusive learning environments that foster collaboration and inspire both students and colleagues.
+                I'm a passionate lecturer who thrives on tackling new challenges, both in my research and in the classroom. I love to explore new ideas and bring fresh, innovative teaching methods to my students, encouraging them to think critically and solve problems. When I'm not doing research on new phytochemicals or computer-aided drug design, you can find me exploring new places and trying different foods. I believe that learning never stops, whether it's in the lab or on an adventure!
             </p>
         </section>
 
@@ -274,8 +285,8 @@
         <!-- Contact Section -->
         <section id="contact" class="glass-card">
             <h3 class="text-3xl font-bold section-title">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>Contact & References</span>
+                <i class="fa-solid fa-id-card text-purple-500 text-3xl"></i>
+                <span>References</span>
             </h3>
             <div class="grid md:grid-cols-2 gap-6 text-gray-700">
                 <div class="inner-glass-card">
