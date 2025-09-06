@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Waddun Jannat | Academic Profile</title>
+    <title>Dr. Sarah Waddun Jannat | Academic Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/208P+rltqejkUqW0L+e0XwP7z0tKqN9cKz0q1E1xUa6K4b4xI58R5zF5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -66,35 +66,80 @@
 
     <!-- Fixed Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-purple-100 bg-opacity-60 backdrop-blur-lg shadow-md py-4">
-        <div class="container mx-auto px-4 flex justify-between gap-x-6 text-sm font-semibold text-gray-600">
-            <a href="#about" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-user"></i>
-                <span>About me</span>
-            </a>
-            <a href="#experience" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-briefcase"></i>
-                <span>Experience</span>
-            </a>
-            <a href="#education" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-book-open"></i>
-                <span>Education</span>
-            </a>
-            <a href="#publications" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-newspaper"></i>
-                <span>Publications</span>
-            </a>
-            <a href="#skills" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-brain"></i>
-                <span>Skills</span>
-            </a>
-            <a href="#awards" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-award"></i>
-                <span>Awards</span>
-            </a>
-            <a href="#contact" class="nav-link flex items-center space-x-1 transition duration-300">
-                <i class="fa-solid fa-id-card"></i>
-                <span>References</span>
-            </a>
+        <div class="container mx-auto px-4 flex items-center justify-between relative">
+            <!-- Logo/Title -->
+            <a href="#" class="text-xl font-bold text-purple-800">SJ</a>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-toggle" class="md:hidden p-2 rounded-md text-purple-700 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <i class="fa-solid fa-bars text-xl" aria-label="Open menu"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600">
+                <a href="#about" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About me</span>
+                </a>
+                <a href="#experience" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#education" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#publications" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>Publications</span>
+                </a>
+                <a href="#skills" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#awards" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Awards</span>
+                </a>
+                <a href="#contact" class="nav-link flex items-center space-x-1 transition duration-300">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>References</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Collapsible) -->
+        <div id="mobile-menu" class="hidden md:hidden flex-col text-center bg-purple-100 bg-opacity-80 backdrop-blur-lg py-4">
+            <div class="flex flex-col items-center gap-y-4 text-sm font-semibold text-gray-700">
+                <a href="#about" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About me</span>
+                </a>
+                <a href="#experience" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#education" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#publications" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>Publications</span>
+                </a>
+                <a href="#skills" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#awards" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Awards</span>
+                </a>
+                <a href="#contact" class="nav-link flex items-center space-x-1 transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>References</span>
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -294,12 +339,14 @@
                     <p>Chairman, Associate Professor</p>
                     <p>Department of Pharmacy, University of Chittagong</p>
                     <p>Email: mohiuddin.pharmcu@gmail.com</p>
+                    <p>Contact no: +88 01816031362</p>
                 </div>
                 <div class="inner-glass-card">
                     <h4 class="font-semibold text-lg list-item-title mb-2">Dr. Md. Kamrul Hossain</h4>
                     <p>Founding Chairman, Professor</p>
                     <p>Department of Pharmacy, University of Chittagong</p>
                     <p>Email: mkhossain73@yahoo.com</p>
+                    <p>Contact No: +88 01737660236</p>
                 </div>
             </div>
             <div class="mt-8 text-center text-gray-500 text-sm">
@@ -314,6 +361,15 @@
             const copyrightElement = document.getElementById('footer-copyright');
             if (copyrightElement) {
                 copyrightElement.innerHTML = `&copy; ${currentYear} Sarah Waddun Jannat. All rights reserved.`;
+            }
+
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
             }
         });
     </script>
